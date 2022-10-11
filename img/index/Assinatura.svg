@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg id="Camada_1" data-name="Camada 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 400">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        font-family: MonotypeCorsiva, 'Monotype Corsiva';
+        stroke: #fff;
+        stroke-miterlimit: 10;
+      }
+
+      .cls-2 {
+        font-size: 200px;
+      }
+
+      .cls-3 {
+        font-size: 180px;
+      }
+    </style>
+  </defs>
+  <text class="cls-1" transform="translate(21.04 258.76)"><tspan class="cls-2" x="0" y="0">L</tspan><tspan class="cls-3" x="116.02" y="0">ucas </tspan><tspan class="cls-2" x="432.69" y="0">G</tspan><tspan class="cls-3" x="556.71" y="0">abriel</tspan></text>
+</svg>
