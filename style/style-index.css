@@ -26,7 +26,7 @@
 .tema-azul:root{
     --font-theme: #2c76ff;
     --font-buttom: #F0F0F0;
-    --actve-color:: #235ECC;
+    --actve-color: #235ECC;
 }
 .tema-verde:root{
     --font-theme: #25af6f;
@@ -36,7 +36,7 @@
 .tema-lilas:root{
     --font-theme: #733af8;
     --font-buttom: #F0F0F0;
-    --actve-color:: #5B2DC4;
+    --actve-color: #5B2DC4;
 }
 .tema-amarelo:root{
     --font-theme:#f1b32c;
@@ -113,6 +113,12 @@ html {
     .base-redes:hover .text-redes{width: 100%; height: 100%;}
     .base-redes p{font-size:20px;}
     .footer-assinatura{font-size: 50px;}
+    .base-redes:hover .text-redes{
+    transform: translateY(0px);
+    opacity: 1;
+    top:0;
+    transition: 0.5s cubic-bezier(.7,.02,.28,.9);
+}
 }
 @media only screen and (max-width: 991px) {
     .menu-aberto{width: 100vw; left: 0;}
@@ -804,12 +810,7 @@ main li:hover{
 .container-redes a:hover{
     color: var(--font-theme);
 }
-.base-redes:hover .text-redes{
-    transform: translateY(0px);
-    opacity: 1;
-    top:0;
-    transition: 0.5s cubic-bezier(.7,.02,.28,.9);
-}
+
 footer a label:hover{
     color:var(--font-theme);
     cursor: pointer;
@@ -843,12 +844,12 @@ header button:active{
     transition: 0.2s;
 }
 .botao-seta-esquerda:active{
-    background-color: var(---actve-color);
+    background-color: var(--actve-color);
     transition: 0.2s;
     box-shadow:0 0 0 2px  var(--actve-color), 2px 2px 5px 0px rgba(0, 0, 0, 0.425);
 }
 .botao-seta-direita:active{
-    background-color: var(---actve-color);
+    background-color: var(--actve-color);
     transition: 0.2s;
     box-shadow:0 0 0 2px  var(--actve-color), 2px 2px 5px 0px rgba(0, 0, 0, 0.425);
 }
