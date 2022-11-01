@@ -19,27 +19,27 @@
     --tema-color: #2a2568;
 }
 .tema-vermelho:root{
-    --font-theme: #e63333;
+    --font-theme: #f54343;
     --font-buttom: #F0F0F0;
-    --actve-color: #AB2020;
+    --actve-color: #c93131;
 }
 .tema-azul:root{
-    --font-theme: #3e7aea;
+    --font-theme: #4485ff;
     --font-buttom: #F0F0F0;
     --actve-color: #235ECC;
 }
 .tema-verde:root{
-    --font-theme: #2fba79;
+    --font-theme: #3bd78e;
     --font-buttom: #F0F0F0;
     --actve-color: #218A59;
 }
 .tema-lilas:root{
-    --font-theme: #754ad8;
+    --font-theme: #8b5cf8;
     --font-buttom: #F0F0F0;
     --actve-color: #5B2DC4;
 }
 .tema-amarelo:root{
-    --font-theme:#e7b13b;
+    --font-theme:#f0b943;
     --font-buttom: #F0F0F0;
     --actve-color: #BF8E22;
 }
@@ -128,7 +128,7 @@ html {
     .menu-aberto{width: 100vw; left: 0;}
     .menu-fechado{width: 100vw; left: -100vw;}
     main li:after{display: none;}
-    .menu-button{bottom: 6  0px; right: 20px;}
+    .menu-button{bottom: 60px; right: 20px;}
     .capa-titulo h1{font-size: 45px;}
     .logo-capa-none{display: none;}
     .intro-img{display: none; opacity: 0;}
