@@ -113,7 +113,7 @@ html {
     .capa-titulo h1{font-size: 50px;}
     .intro-img{display: flex; align-items: center; justify-content: center;}
     .base-redes{width: 200px; height: 200px;}
-    .text-redes{width: 200px; height: 0;}
+    .text-redes{width: 100%; height: 100%;}
     .base-redes:hover .text-redes{width: 100%; height: 100%;}
     .base-redes p{font-size:20px;}
     .footer-assinatura{font-size: 50px;}
@@ -121,14 +121,14 @@ html {
     transform: translateY(0px);
     opacity: 1;
     top:0;
-    transition: 0.5s cubic-bezier(.7,.02,.28,.9);
-}
+    transition: 0.2s cubic-bezier(.7,.02,.28,.9);
+    }
 }
 @media only screen and (max-width: 991px) {
     .menu-aberto{width: 100vw; left: 0;}
     .menu-fechado{width: 100vw; left: -100vw;}
     main li:after{display: none;}
-    .menu-button{bottom: 60px; right: 20px;}
+    .menu-button{bottom: 60px; right: 30px;}
     .capa-titulo h1{font-size: 45px;}
     .logo-capa-none{display: none;}
     .intro-img{display: none; opacity: 0;}
@@ -384,8 +384,9 @@ input:checked ~ label .hamburguer::after{
 /* capa */
 .capa-container{
     width: 100%;
-    padding-top: 70px;
+    padding-top: 40px;
     display: inline;
+    background-color: var(--body-bg);
 }
 .capa-container h1{
     color: var(--body-font);

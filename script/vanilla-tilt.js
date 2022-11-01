@@ -350,7 +350,8 @@ class VanillaTilt {
       "width": "100%",
       "height": "100%",
       "overflow": "hidden",
-      "pointer-events": "none"
+      "pointer-events": "none",
+      "border-radius": "50px"
     });
 
     Object.assign(this.glareElement.style, {
@@ -362,6 +363,7 @@ class VanillaTilt {
       "transform": "rotate(180deg) translate(-50%, -50%)",
       "transform-origin": "0% 0%",
       "opacity": "0",
+      "border-radius": "50px"
     });
 
     this.updateGlareSize();
