@@ -13,11 +13,11 @@ const inputAmarelo = document.getElementById('input-amarelo')
 body.classList.add('body')
 
 //Inseri a imagem da introdução logo ao carregar o site
-document.getElementById('img-prancheta').src ='./img/index/prancheta-verde.png'
+document.getElementById('img-prancheta').src ='./img/index/prancheta-vermelha.png'
 
-//Desabilita o click no botão verde
+//Desabilita o click no botão vermelho
 //Já que esse é o tema nativo do site
-inputVerde.disabled = true;
+inputVermelho.disabled = true;
 
 //Funções para mudar as cores do site
 function temaVermelho(){

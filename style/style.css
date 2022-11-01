@@ -3,11 +3,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;600;700&family=Open+Sans&display=swap');
 
 :root{
-    --body-bg: #1b1b1b;
-    --body-bg-menu: #202020eb;
+    --body-bg: #0a0a0a;
+    --body-bg-menu: #101010eb;
     --body-font: #F0F0F0;
-    --line-font: #1d1d1d;
-    --scroll-bar: #3b3b3b;
+    --line-font: #1a1a1a;
+    --scroll-bar: #202020;
     --tema-color: #fd6a18;
 }
 .light-mode:root{
@@ -19,29 +19,33 @@
     --tema-color: #2a2568;
 }
 .tema-vermelho:root{
-    --font-theme: #dd2929;
+    --font-theme: #e63333;
     --font-buttom: #F0F0F0;
     --actve-color: #AB2020;
 }
 .tema-azul:root{
-    --font-theme: #2c76ff;
+    --font-theme: #3e7aea;
     --font-buttom: #F0F0F0;
     --actve-color: #235ECC;
 }
 .tema-verde:root{
-    --font-theme: #25af6f;
+    --font-theme: #2fba79;
     --font-buttom: #F0F0F0;
     --actve-color: #218A59;
 }
 .tema-lilas:root{
-    --font-theme: #733af8;
+    --font-theme: #754ad8;
     --font-buttom: #F0F0F0;
     --actve-color: #5B2DC4;
 }
 .tema-amarelo:root{
-    --font-theme:#f1b32c;
+    --font-theme:#e7b13b;
     --font-buttom: #F0F0F0;
     --actve-color: #BF8E22;
+}
+*::selection{
+    color:  var(--font-buttom);
+    background-color: var(--font-theme);
 }
 html {
     height: 100%;
@@ -124,7 +128,7 @@ html {
     .menu-aberto{width: 100vw; left: 0;}
     .menu-fechado{width: 100vw; left: -100vw;}
     main li:after{display: none;}
-    .menu-button{bottom: 40px; right: 20px;}
+    .menu-button{bottom: 6  0px; right: 20px;}
     .capa-titulo h1{font-size: 45px;}
     .logo-capa-none{display: none;}
     .intro-img{display: none; opacity: 0;}
