@@ -382,6 +382,25 @@ input:checked ~ label .hamburguer::after{
 }
 
 /* capa */
+.intro-img img{
+    animation: imageFloat 20s ease-in-out infinite;
+    position: absolute;
+    animation-delay: 4s;
+}
+
+@keyframes imageFloat{
+    0%, 100%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(-100px);
+    }
+}
+.capa{
+    background-color: var(--body-bg);
+    height: 120px;
+}
+
 .capa-container{
     width: 100%;
     padding-top: 40px;
@@ -717,15 +736,15 @@ header #c5{background-image: url(../img/card/outros.jpeg);}
 
 /* Footer */
 footer{
-    background-color: #070707;
+    background-image: linear-gradient(var(--body-bg) 0%, var(--font-theme) 180%);
     width: 100%;
     padding: 50px 20px 20px 20px;
     margin-top: 40px;
-    color:white;
+    color:var(--body-font);
     font-family: 'Open Sans', sans-serif;
 }
 footer a label{
-    color:white;
+    color:var(--body-font);
     text-decoration: none;
     cursor: pointer;
 }
@@ -740,6 +759,7 @@ footer label{
 footer iframe{
     border-radius: 10px;
     margin: 20px 0 20px 0; 
+    box-shadow:  0px 0px 10px rgba(0, 0, 0, 0.425)
 }
 .coluna-assinatura{
     padding-bottom: 40px;
