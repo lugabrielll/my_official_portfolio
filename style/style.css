@@ -111,15 +111,6 @@ html {
 }
 /* Responsividade */
 @media only screen and (min-width: 992px) {
-    .body-menu{
-        background-color: var(--body-bg);    
-        font-family: 'Open Sans', sans-serif; 
-        min-height: 100%;
-        transition: 0.1s;
-        max-width: 100%;
-        padding-left: 300px;
-        overflow-x: hidden;
-    }
     .menu-aberto{width: 300px; left: 0; transition: 0s;}
     .menu-fechado{width: 300px; left: -300px;}
     main li:after{width: 136px;}
@@ -138,15 +129,6 @@ html {
     }
 }
 @media only screen and (max-width: 991px) {
-    .body-menu{
-        background-color: var(--body-bg);
-        font-family: 'Open Sans', sans-serif; 
-        min-height: 100%; 
-        transition: 0.1s;
-        max-width: 100%;
-        margin-left: 0px;
-        overflow-x: hidden;
-    }
     main li:after{display: none;}
     .menu-aberto{width: 300px; left: 0; transition: 3s;}
     .menu-fechado{width: 300px; left: -300px;}
@@ -184,7 +166,16 @@ html {
         height: 100vh;
         z-index: 0;
         display: none;
-        background-color:#0a0a0a35;
+        background-color:#0a0a0a40;
+    }
+    .body-menu{
+        background-color: var(--body-bg);    
+        font-family: 'Open Sans', sans-serif; 
+        min-height: 100%;
+        transition: 0.1s;
+        max-width: 100%;
+        padding-left: 300px;
+        overflow-x: hidden;
     }
 }
 
