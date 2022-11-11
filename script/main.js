@@ -61,11 +61,23 @@ checkboxTema.addEventListener('change', function(){
 //Botão Menu Hamburguer
 const checkboxMenu = document.getElementById('menu-hamburguer')
 const menuLateral = document.getElementById('menu-lateral')
+const bodyMenu = document.querySelector('body')
+const closeMenu = document.getElementById('close-menu')
+
 //se houver mudança, adicionará a classe do menu-aberto
 checkboxMenu.addEventListener('change', function(){
     menuLateral.classList.toggle('menu-aberto')
-    menuLateral.classList.toggle('animate__fadeInLeft')
+    closeMenu.classList.toggle('close-menu')
+    // menuLateral.classList.toggle('animate__fadeInLeft')
+    if (window.innerWidth >= 1600) {
+        bodyMenu.classList.toggle('body-menu')
+    }else{
+        bodyMenu.classList.remove('body-menu')
+    }
 })
+closeMenu.addEventListener('click', ()=>{
+        checkboxMenu.click()
+} )
 
 // Botões dos tópicos do menu
 //Criando uma variável para pegar todas as listas dos tópicos
@@ -79,7 +91,7 @@ btnMenu.forEach (item => {
 function scrollToIdOnClick(event){
     event.preventDefault()
     //Pegamos a função getScrollTopHret - 25, para haver uma margem do top da tela
-    const positionId = getScrollTopHref(event.target) - 25
+    const positionId = getScrollTopHref(event.target) - 20
     scrollToPosition(positionId)
     checkboxMenu.click()
 }
@@ -88,7 +100,7 @@ function scrollToIdOnClick(event){
 function scrollToPosition(positionId){
 
     //Essa é uma framework de smoth scroll (x, y, velocidade)
-    smoothScrollTo(0, positionId, 80)
+    smoothScrollTo(0, positionId, 50)
 }
 
 //Função para analizar a posição do elemento em relação a tela
@@ -161,9 +173,7 @@ function typeWriter(elemento) {
 
 //Aplicando a função de escrita(tupeWrite) na class especificada
 const titulo = document.querySelector('.capa h1')
-console.log (titulo)
  typeWriter(titulo)
-
 
 //Variável para pegar a animação conforme scroll
 const dataAnimacao=document.querySelectorAll('[data-animacao]')
